@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: bisque;
+}
+#weather {
+    margin-top: 20px;
+}
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.Ejercicio {
+    width: 60%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    empty-cells: hide;
+    caption-side: top;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.904);
+}
+.Ejercicio th:hover {
+    background-color: rgb(201, 201, 201);
+}
+.Ejercicio tr:hover {
+    background-color: rgb(201, 201, 201);
+}
+.Ejercicio th {
+    padding: 8px;
+    border: 1px solid #0099ff;;
+}
+tr:hover {
+    background-color: rgb(201, 201, 201);
+}
+.Ejercicio td:hover {
+    background-color: rgb(201, 201, 201);
+}
+.Ejercicio td {
+    padding: 8px;
+    border: 1px solid #009dff;
+}

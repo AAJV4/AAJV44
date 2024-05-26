@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingles</title>
+</head>
+<style>
+    .ingles{
+        font-size: 20px;
+    }
+    .traduccion{
+        font-size: 20px;
+    }
+    body{
+        background-color: rgb(243, 204, 241);
+    }
+.slider-container {
+    width: 100;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 35%;
+    height: auto;
+}
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slider img');
+    let index = 0;
+    const slideWidth = slides[0].clientWidth;
+    const totalSlides = slides.length;
+
+    function nextSlide() {
+        index = (index + 1) % totalSlides;
+        updateSlide();
+    }
+
+    function updateSlide() {
+        slider.style.transform = `translateX(-${index * slideWidth}px)`;
+    }
+
+    setInterval(nextSlide, 1000);
+});
+</script>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="Imagen1.png" alt="imagen1">
+            <img src="Imagen 2.png" alt="imagen2">
+            <img src="Imagen3.png" alt="imagen3">
+            <img src="Imagen 4.png" alt="imagen4">
+            <img src="Imagen 5.png" alt="imagen5">
+            <img src="Imagen 6.png" alt="imagen6">
+        </div>
+    </div>
+    <ul>
+        <li><a href="Proyecto.html">inicio</a></li>
+    </ul>
+    <h2>Ingles</h2>
+    <h2>Regualar verbs, irregular verbs, adjetivos, adverbs, vocabulary</h2>
+    <div class="ingles">
+    <p>REGULAS VERBS</p>
+    <P>Regular verbs in English are those that only need to add the ending “ed” to form their past tense and participle.
+        This means that to form any tense and person, a specific morpheme is added to the lexeme of the verb.</P>
+    <P>IRREGULAR VERBS</P>   
+    <P>Irregular verbs are verbs that have particular or idiosyncratic conjugations depending on the time 
+       or way in which they are conjugated. It experiences changes in terms of the paradigm, since it takes different
+        endings than those that are common in regular verbs.</P>
+     <P>ADJECTIVES</P>   
+        <P>Adjectives are words that accompany a noun or noun, giving us information about it and completing
+            its meaning. That is, the adjectives that help us describe the characteristics of things. Ex.
+            The big house; the black cat; Ana is thinner than me.</P>
+     <P>ADVERBS</P>      
+            <P>Adverbs serve to modify or specify the meaning of other words. They usually modify verbs,
+                telling us how, how often, when or where something happens. The adverb comes after the verb
+                it modifies. They really have so much power that they can change the meaning of an entire sentence.</P>
+      <P>VOCABULARY</P>          
+                <P>Vocabulary refers to the knowledge of words and their meanings. Students learn through a variety of contexts, including talking,</P>
+            </div>
+                <div class="traduccion">
+    <p>TRADUCCION:</p>
+    <p>VERBOS REGULARES:</p>
+    <p>Los verbos regulares en inglés son aquellos que para formar su tiempo pasado y participio solo necesitan
+        añadir la terminación “ed”. Esto significa que para formar cualquier tiempo y persona, se añade un morfema
+        específico al lexema del verbo. Ejemplos de verbos regulares: Llegar,Preguntar,Creer,Llamar,Llorar,Decidir,
+        Disfrutar,Suceder,Necesitar,Amar, etc.</p>
+        <p>VERBOS IRREGULARES:</p>
+        <p>Es un verbo que posee conjugaciones particulares o idiosincráticas según el tiempo o modo en el que
+            sea conjugado. Experimenta cambios en cuanto al paradigma, ya que toma desinencias distintas a las
+            que son habituales en los verbos regulares.Algunos ejemplos son:</p>
+            <p>ADJETIVOS:</p>
+            <p>Los adjetivos son palabras que acompañan a un nombre o sustantivo,dándonos información sobre el
+                mismo y completando su significado. Es decir, los adjetivos nos sirven para describir las
+                características de las cosas. Ej. La casa grande ; el gato negro ; Ana es más delgada que yo.</p>
+                <p> ADVRBIOS:</p>
+                <p>Los adverbios sirven para modificar o precisar el significado de otras palabras.
+                    Normalmente modifican verbos, diciéndonos cómo, con qué frecuencia, cuándo, o dónde sucede
+                    algo. El adverbio va detrás del verbo que modifica.Realmente tienen tanto poder, que pueden
+                    cambiar el significado de una oración entera</p>
+                    <p>VOCABULARIO:</p>
+                    <p>El vocabulario se refiere al conocimiento de palabras y sus significados.Los estudiantes
+                        aprenden a través de una variedad de contextos, tales como hablar, interactuar y jugar
+                        con otros; escuchar cuentos; ver la televisión; y asistir a la escuela.</p>
+                    </div>
+</body>
+</html>

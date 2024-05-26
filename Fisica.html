@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisica</title>
+</head>
+<style>
+    body{
+        background-color: rgb(181, 245, 181);
+    }
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 35%;
+    height: auto;
+}
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slider img');
+    let index = 0;
+    const slideWidth = slides[0].clientWidth;
+    const totalSlides = slides.length;
+
+    function nextSlide() {
+        index = (index + 1) % totalSlides;
+        updateSlide();
+    }
+
+    function updateSlide() {
+        slider.style.transform = `translateX(-${index * slideWidth}px)`;
+    }
+
+    setInterval(nextSlide, 1000);
+});
+</script>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="C.P.W1.png" alt="imagen1">
+            <img src="C.P.W2.png" alt="imagen2">
+            <img src="C.P.W3.png" alt="imagen3">
+            <img src="C.P.W4.png" alt="imagen4">
+            <img src="C.P.W5.png" alt="imagen5">
+            <img src="C.P.W6.png" alt="imagen6">
+        </div>
+    </div>
+    <h2>Fisica</h2>
+    <p></p>
+</body>
+</html>

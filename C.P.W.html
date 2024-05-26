@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.P.W</title>
+</head>
+<style>
+    body{
+        background-color: rgb(181, 245, 181);
+    }
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 35%;
+    height: auto;
+}
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slider img');
+    let index = 0;
+    const slideWidth = slides[0].clientWidth;
+    const totalSlides = slides.length;
+
+    function nextSlide() {
+        index = (index + 1) % totalSlides;
+        updateSlide();
+    }
+
+    function updateSlide() {
+        slider.style.transform = `translateX(-${index * slideWidth}px)`;
+    }
+
+    setInterval(nextSlide, 1000);
+});
+</script>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="C.P.W1.png" alt="imagen1">
+            <img src="C.P.W2.png" alt="imagen2">
+            <img src="C.P.W3.png" alt="imagen3">
+            <img src="C.P.W4.png" alt="imagen4">
+            <img src="C.P.W5.png" alt="imagen5">
+            <img src="C.P.W6.png" alt="imagen6">
+        </div>
+    </div>
+    <ul>
+        <li><a href="Proyecto.html">inicio</a></li>
+    </ul>
+    <h2>C.P.W, DAS, DAC</h2>
+    <h2>Energia renovable</h2>
+    <p>Que son las energias renovables?</p>
+    <p>Las energías renovables son aquellas fuentes de energía que se obtienen de recursos naturales que son inagotables o que se
+    regeneran rápidamente en la naturaleza. Estas incluyen energía solar, eólica, hidroeléctrica, geotérmica, y biomasa.
+    La principal característica de las energías renovables es que no se agotan con su uso y, por lo tanto, son consideradas más sostenibles
+    a largo plazo en comparación con los combustibles fósiles, que son finitos y contribuyen al cambio climático. La captura y utilización de
+    estas formas de energía renovable también puede tener un menor impacto ambiental en términos de emisiones de gases de efecto invernadero
+    y otros contaminantes en comparación con las fuentes de energía convencionales.</p>
+    <p>Tipos de energia renovable y su funcionamiento</p>
+    <p>1-Energía Solar: Esta proviene del sol y puede ser capturada y convertida en electricidad mediante paneles solares fotovoltaicos o en
+        calor mediante colectores solares térmicos. Es una fuente de energía muy versátil y abundante, especialmente en regiones con altos
+        niveles de radiación solar.</p>
+        <p>2-Energía Eólica: Se genera a partir del viento. Los aerogeneradores capturan la energía cinética del viento y la convierten en
+            electricidad. La energía eólica es una de las fuentes de energía renovable de más rápido crecimiento en el mundo y puede ser
+            aprovechada tanto en tierra firme como en instalaciones marinas.</p>
+            <p>3-Energía Hidroeléctrica: Se obtiene a partir del movimiento del agua, generalmente mediante la construcción de presas y
+                la captura de la energía cinética del agua en movimiento. Las centrales hidroeléctricas pueden ser de gran escala, como las
+                represas, o de pequeña escala, como las turbinas instaladas en ríos.</p>
+                <p>4-Energía Geotérmica: Esta proviene del calor generado en el interior de la Tierra. Se puede aprovechar mediante la
+                    perforación de pozos geotérmicos para capturar el vapor o el agua caliente subterránea y utilizarlo para generar
+                    electricidad o proporcionar calefacción directa.</p>
+                    <p>5-Energía de la Biomasa: Se deriva del procesamiento de materia orgánica, como residuos agrícolas, residuos forestales,
+                        desechos orgánicos municipales y cultivos energéticos, para producir biogás, biocombustibles líquidos o sólidos,
+                        y calor. La biomasa es una fuente de energía renovable versátil que puede ser utilizada para generar electricidad,
+                        calefacción y combustible para vehículos.</p>
+                        <p>Estas son solo algunas de las principales formas de energía renovable, y cada una tiene sus propias ventajas y
+                            desafíos. La transición hacia una mayor utilización de las energías renovables es fundamental para reducir las
+                            emisiones de gases de efecto invernadero y mitigar el cambio climático.</p>
+</body>
+</html>
